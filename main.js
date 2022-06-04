@@ -5,11 +5,14 @@ function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
 }
+
 function showNavOnScroll() {
   if (scrollY > 10) {
-    navigation.classList.add('scroll');
+    // navigation.classList.add('scroll')
+    document.querySelector('#navigation').classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll');
+    // navigation.classList.remove('scroll')
+    document.querySelector('#navigation').classList.remove('scroll')
   }
 }
 
